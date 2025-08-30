@@ -1,14 +1,15 @@
-# POBLACIONS GEOCAT 
+# POBLACIONS GEOCAT
+
 Programa per recuperar les coordenades de les poblacions de Catalunya segons les dades proveïdes per l'Institut Cartogràfic i Geològic de Catalunya.
 
 Les poblacions les recuperem d'una exportació directa de l'ICGC a data de 27 d'agost, 2025 i es troba a `t150903.csv`.
 
 Farem servir la API pública per obtindre les coordenades:
 
-_Cerca de "Cardedeu":_
-https://eines.icgc.cat/geocodificador/autocompletar?text=cardedeu&size=1&layers=tops
+*Cerca de "Cardedeu":* <https://eines.icgc.cat/geocodificador/autocompletar?text=cardedeu&size=1&layers=tops>
 
-_Resultat:_
+*Resultat:*
+
 ``` json
 {
     "type":"FeatureCollection",
@@ -42,3 +43,6 @@ _Resultat:_
 }
 ```
 
+Això ens permet situar els punts al mapa:
+
+![](scat_plot.png)
